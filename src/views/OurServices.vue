@@ -4,19 +4,20 @@
       <!-- Hero Title -->
       <div class="max-w-[1400px] mx-auto pt-16 px-2 pb-14">
         <div
-          class="relative w-full rounded-2xl overflow-hidden mb-8 flex items-center justify-center"
-          style="min-height: 260px"
+          class="relative w-full rounded-2xl overflow-hidden mb-8 flex items-center justify-center min-h-[260px]"
         >
+          <!-- Overlay -->
+          <div class="absolute inset-0 z-[90]"></div>
+
           <img
             src="/images/ourservices img.png"
             :alt="te('services.heroAlt') ? t('services.heroAlt') : 'Services'"
-            class="about-image w-full h-full object-cover relative"
-            style="z-index: 99"
+            class="about-image w-full h-full object-cover relative z-[95]"
           />
+
           <h1
             class="about-title absolute z-[100] left-1/2 -translate-x-1/2 font-extrabold text-black
-                   text-[2.6rem] md:text-[7.5rem] uppercase tracking-[0.3em] leading-none text-center select-none"
-            style="top: 15%; width: 100%"
+                   text-[2.6rem] md:text-[7.5rem] uppercase tracking-[0.3em] leading-none text-center select-none top-[15%] w-full"
           >
             {{ te('ourServices') ? t('ourServices') : 'Our Services' }}
           </h1>
@@ -24,8 +25,7 @@
       </div>
 
       <main
-        class="w-full max-w-[1400px] mx-auto px-4 pb-24"
-        :class="isRTL ? 'text-right' : 'text-left'"
+        class="w-full max-w-[1400px] mx-auto px-4 pb-24 text-start"
       >
         <section v-for="(block, idx) in blockKeys" :key="`${block}-${idx}`" class="mt-12">
           <div class="grid gap-6 lg:grid-cols-3">
@@ -72,12 +72,11 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-// استخدم السكوپ العالمي لتتفادى مشاكل الصفحات اللي ما فيها <i18n> محلي
 const { t, te, tm, locale } = useI18n({ useScope: 'global' })
 
-const isRTL = computed(() => locale.value === 'ar')
+// دعم ar و ar-EG
+const isRTL = computed(() => locale.value?.startsWith('ar'))
 
-// لو items مش موجودة، رجّع []
 const getItems = (block) => {
   const val = tm(`${block}.items`)
   return Array.isArray(val) ? val : []
@@ -85,10 +84,3 @@ const getItems = (block) => {
 
 const blockKeys = ['services.banking', 'services.audit', 'services.safety', 'services.it']
 </script>
-
-<style scoped>
-article:hover {
-  transform: translateY(-2px);
-  transition: transform 180ms ease;
-}
-</style>
