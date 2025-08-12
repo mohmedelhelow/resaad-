@@ -14,57 +14,39 @@
   "menu": "Menu",
   "close": "Close",
   "welcome": "Welcome to our site",
-
   "siteName": "Ressad",
-
   "Crafting": "Crafting",
   "blueprint": "the blueprint for success",
-
   "Contribution": "Resaad’s Contribution",
   "expoContribution": "Our Contribution to Expo 2030",
   "expoParagraph": "Resaad is dedicated to making a substantial contribution to Expo 2030 in alignment with the global event. Our commitment involves showcasing our expertise in various pioneering solutions across our services, adding value to the overall success of the Expo. We are eager to contribute significantly to the achievement of Expo's goals and objectives.",
-
   "visionAlignment": "Our Alignment with Vision 2030",
   "visionParagraph": "Resaad is firmly aligned with the transformative goals outlined in Saudi Vision 2030, contributing to the nation's progress through innovative solutions and strategic initiatives. Our commitment to innovation, sustainability, and social progress reflects our dedication to the vision, making Resaad a proactive partner in shaping a prosperous and sustainable future for Saudi Arabia.",
-
   "aboutUs": "About Us",
   "aboutTagline": "Your Strategic Partner in\nConsultation Services",
   "aboutParagraph": "Resaad, emerging from the vibrant heart of Riyadh, is a trailblazer in the realm of consultancy. Our firm is where traditional business acumen meets cutting-edge innovation, crafting a legacy of transformative solutions.",
   "seeMore": "See More",
-
   "missionVisionTitle": "Our Mission & Vision",
   "missionVisionSubtitle": "Steering Progress, Envisioning Excellence",
-
   "mission": "Mission",
   "missionParagraph": "To revolutionize consultancy with ingenuity and expertise, empowering businesses with innovative solutions for today’s challenges. Our focus is on immediate impact, ensuring safety, security, and strategic growth.",
-
   "vision": "Vision",
   "visionParagraphCard": "Envisioning Resaad as a beacon of transformative thinking, our aim is to lead and redefine the consultancy landscape, setting new benchmarks of excellence for the future across the Middle East and beyond.",
-
   "coreValuesTitle": "Core Values",
   "coreValuesSubtitle": "Our guiding principles on the journey",
-
   "integrityTitle": "Integrity",
   "integrityText": "At Resaad, integrity is the foundation of everything we do. We embrace the highest ethical standards, ensuring transparency and trust in every interaction as the cornerstone of our professional ethics.",
-
   "innovationTitle": "Spirit of Innovation",
   "innovationText": "Innovation is our driving force. We constantly push boundaries to explore new horizons, ensuring that every solution we provide not only addresses today’s challenges but also anticipates tomorrow’s opportunities.",
-
   "excellenceTitle": "Pursuit of Excellence",
   "excellenceText": "Our commitment to excellence is unwavering. In every endeavor, we strive to exceed expectations, deliver outstanding quality, and set new industry standards—reflecting our dedication to being the best at what we do.",
-
   "clientCentricTitle": "Client-Centric Approach",
   "clientCentricText": "Our clients are at the heart of everything we do. We are fully committed to understanding their unique needs and delivering tailored, impactful solutions that drive their success.",
-
   "ourServices": "Our Services",
   "serviceBanking": "Banking & Cash\nManagement",
   "serviceAudit": "Audit &\nInspection",
   "serviceSafety": "Safety, Security &\nRisk Assessment",
   "serviceIT": "IT &\nCyber Security",
-
-
-  
-
   "riyadhAlt": "Riyadh",
   "aboutParagraph2": "At Resaad, we're not just consultants; we are visionary architects reshaping the consultancy landscape...",
   "ourTeamTitle": "Our Team",
@@ -82,14 +64,8 @@
       "bio": "Brings a quarter-century of expertise to the cash industry, with significant contributions in ATM maintenance, Cash in Transit, and Cash Processing. His leadership at Loomis UK managed a substantial budget, overseeing a broad CIT network. As President of ATMs Worldwide for Securitas, he had accountability for a vast array of ATMs across multiple countries. His strategic input has been instrumental in projects for the Central Bank of Kuwait and enhancing profitability for Hong Kong's major note distributor. Dr. Lewis's background in Mathematics and an MBA underpins his strategic and analytical proficiency."
     }
   },
-
-
-
-
-  "ourServices": "OUR SERVICES",
   "services": {
     "heroAlt": "Our Services hero image",
-
     "banking": {
       "kicker": "Streamlining Financial Operations",
       "title": "Banking & Cash Management",
@@ -121,7 +97,6 @@
         }
       ]
     },
-
     "audit": {
       "kicker": "Ensuring Compliance and Efficiency",
       "title": "Audit & Inspection",
@@ -153,7 +128,6 @@
         }
       ]
     },
-
     "safety": {
       "kicker": "Ensuring Organizational Resilience",
       "title": "Safety, Security & Risk Assessment",
@@ -205,7 +179,6 @@
         }
       ]
     },
-
     "it": {
       "kicker": "Safeguarding Digital Frontiers",
       "title": "IT & Cybersecurity",
@@ -238,8 +211,7 @@
       ]
     }
   },
-
-   "footer": {
+  "footer": {
     "description": "Resaad is a leading consultancy firm in Saudi Arabia, offering innovative solutions in Banking, Audit, Safety & Security, and IT. We are committed to delivering the highest standards of quality and professionalism to our clients.",
     "aboutUs": "About Us",
     "history": "Company History",
@@ -262,15 +234,6 @@
     "allRights": "All rights reserved.",
     "terms": "Terms & Conditions",
     "privacy": "Privacy Policy",
-    "addressOS":"3989 7022 Suez Canal, Al Aqiq, Riyadh, Saudi Arabia"
-
+    "addressOS": "3989 7022 Suez Canal, Al Aqiq, Riyadh, Saudi Arabia"
   }
-
-
-
-
-
-
-
-
 }
