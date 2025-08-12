@@ -1,0 +1,9 @@
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root { color-scheme: light; }    /* يمنع المتصفح من قلب ألوان الفورم/السكرول */
+html.dark { color-scheme: dark; }
+

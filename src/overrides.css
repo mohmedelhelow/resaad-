@@ -1,0 +1,7 @@
+
+:root { color-scheme: light !important; }
+@media (prefers-color-scheme: dark) {
+  :root { color-scheme: light !important; }
+  html, body { background: #ffffff !important; color: #000000 !important; }
+}
+html, body, #app { filter: none !important; }
