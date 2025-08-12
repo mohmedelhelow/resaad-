@@ -9,7 +9,7 @@
         >
           <img
             src="/images/ourservices img.png"
-            :alt="$t('services.heroAlt')"
+            :alt="te('services.heroAlt') ? t('services.heroAlt') : 'Services'"
             class="about-image w-full h-full object-cover relative"
             style="z-index: 99"
           />
@@ -18,7 +18,7 @@
                    text-[2.6rem] md:text-[7.5rem] uppercase tracking-[0.3em] leading-none text-center select-none"
             style="top: 15%; width: 100%"
           >
-            {{ $t('ourServices') }}
+            {{ te('ourServices') ? t('ourServices') : 'Our Services' }}
           </h1>
         </div>
       </div>
@@ -32,17 +32,17 @@
             <div class="lg:col-span-3">
               <!-- Kicker -->
               <h3 class="text-base md:text-lg font-semibold uppercase tracking-wider text-amber-700">
-                {{ $t(`${block}.kicker`) }}
+                {{ te(`${block}.kicker`) ? t(`${block}.kicker`) : '' }}
               </h3>
 
               <!-- Title -->
               <h2 class="mt-2 text-3xl md:text-4xl lg:text-5xl font-extrabold">
-                {{ $t(`${block}.title`) }}
+                {{ te(`${block}.title`) ? t(`${block}.title`) : '' }}
               </h2>
 
               <!-- Description -->
               <p class="mt-4 max-w-4xl text-[15px] md:text-base leading-7 text-slate-600">
-                {{ $t(`${block}.description`) }}
+                {{ te(`${block}.description`) ? t(`${block}.description`) : '' }}
               </p>
             </div>
           </div>
@@ -50,7 +50,7 @@
           <!-- Cards -->
           <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             <article
-              v-for="(it, i) in tm(`${block}.items`)"
+              v-for="(it, i) in getItems(block)"
               :key="`${block}-item-${i}`"
               class="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm hover:-translate-y-0.5 transition"
             >
@@ -72,10 +72,17 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-const { locale, tm } = useI18n()
+// استخدم السكوپ العالمي لتتفادى مشاكل الصفحات اللي ما فيها <i18n> محلي
+const { t, te, tm, locale } = useI18n({ useScope: 'global' })
+
 const isRTL = computed(() => locale.value === 'ar')
 
-// مفاتيح الأقسام بدل هاردكود
+// لو items مش موجودة، رجّع []
+const getItems = (block) => {
+  const val = tm(`${block}.items`)
+  return Array.isArray(val) ? val : []
+}
+
 const blockKeys = ['services.banking', 'services.audit', 'services.safety', 'services.it']
 </script>
 
