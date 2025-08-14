@@ -15,7 +15,8 @@
             <li><RouterLink to="/" @click="closeMenu">{{ $t('home') }}</RouterLink></li>
             <li><RouterLink to="/about" @click="closeMenu">{{ $t('about') }}</RouterLink></li>
             <li><RouterLink to="/services" @click="closeMenu">{{ $t('services2') }}</RouterLink></li>
-            <li><a href="#" @click="closeMenu">{{ $t('resources') }}</a></li>
+            <li><RouterLink to="/contact" @click="closeMenu">{{ $t('title.contact') }}</RouterLink></li>
+
             <li style="color: #e4ae65 !important; font-weight: bold !important;"><button @click="() => { toggleLang(); closeMenu(); }">{{ switchLabel }}</button></li>
             <li class="md:hidden"><label for="check" class="close-menu cursor-pointer text-2xl">×</label></li>
           </ul>
