@@ -234,5 +234,22 @@
     "terms": "Terms & Conditions",
     "privacy": "Privacy Policy",
     "addressOS": "3989 7022 Suez Canal, Al Aqiq, Riyadh, Saudi Arabia"
+  },
+  
+   "riyadhAlt2": "Riyadh City",
+  "titlecontact": {
+    "contact": "Contact Us"
+  },
+  "contactus": {
+    "heading": "Get in Touch",
+    "description": "Get in touch with us using the contact form below.<br>Our team will respond to your inquiries promptly.",
+    "addressLabel": "Address:",
+    "address": "3989, 7022 Qanat As Suwais, Al Aqiq, 3989, Riyadh, Saudi Arabia",
+    "emailLabel": "Email:",
+    "email": "info@resaad.com",
+    "phoneLabel": "Phone:",
+    "phone": "+966 11 226 8336"
   }
+
+
 }

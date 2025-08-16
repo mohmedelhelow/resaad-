@@ -12,12 +12,31 @@
           <label for="check" class="open-menu select-none cursor-pointer text-2xl">≡</label>
           <!-- Menu -->
           <ul class="menu flex items-center [&>li>a]:text-center [&>li>a]:relative [&>li>a]:transition [&>li>a]:duration-200 [&>li>a]:ease-in-out [&>li>a]:font-medium [&>li>a]:text-lg [&>li]:ps-8">
-            <li><RouterLink to="/" @click="closeMenu">{{ $t('home') }}</RouterLink></li>
-            <li><RouterLink to="/about" @click="closeMenu">{{ $t('about') }}</RouterLink></li>
-            <li><RouterLink to="/services" @click="closeMenu">{{ $t('services2') }}</RouterLink></li>
-            <li><RouterLink to="/contact" @click="closeMenu">{{ $t('title.contact') }}</RouterLink></li>
+            <li>
+              <RouterLink to="/" @click="closeMenu">{{ $t("home") }}</RouterLink>
+            </li>
+            <li>
+              <RouterLink to="/about" @click="closeMenu">{{ $t("about") }}</RouterLink>
+            </li>
+            <li>
+              <RouterLink to="/services" @click="closeMenu">{{ $t("services2") }}</RouterLink>
+            </li>
+            <li>
+              <RouterLink to="/contact" @click="closeMenu">{{ $t("title.contact") }}</RouterLink>
+            </li>
 
-            <li style="color: #e4ae65 !important; font-weight: bold !important;"><button @click="() => { toggleLang(); closeMenu(); }">{{ switchLabel }}</button></li>
+            <li style="color: #e4ae65 !important; font-weight: bold !important">
+              <button
+                @click="
+                  () => {
+                    toggleLang();
+                    closeMenu();
+                  }
+                "
+              >
+                {{ switchLabel }}
+              </button>
+            </li>
             <li class="md:hidden"><label for="check" class="close-menu cursor-pointer text-2xl">×</label></li>
           </ul>
         </div>
@@ -52,13 +71,17 @@ watch(locale, applyDir);
 
 // اقفال منيو الموبايل
 const menuCheck = ref(null);
-const closeMenu = () => { if (menuCheck.value) menuCheck.value.checked = false; };
+const closeMenu = () => {
+  if (menuCheck.value) menuCheck.value.checked = false;
+};
 
 // اقفلها بعد أي انتقال روت
 router.afterEach(() => closeMenu());
 
 // اختياري: زر Esc يقفلها
-const onEsc = (e) => { if (e.key === "Escape") closeMenu(); };
+const onEsc = (e) => {
+  if (e.key === "Escape") closeMenu();
+};
 onMounted(() => window.addEventListener("keydown", onEsc));
 onBeforeUnmount(() => window.removeEventListener("keydown", onEsc));
 </script>
@@ -73,16 +96,32 @@ onBeforeUnmount(() => window.removeEventListener("keydown", onEsc));
 }
 
 /* الوضع العادي (LTR) */
-.open-menu { top: 50%; right: 20px; transform: translateY(-50%); }
-.close-menu { top: 20px; right: 20px; }
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
 
 /* RTL */
-html[dir="rtl"] .open-menu { right: auto; left: 20px; }
-html[dir="rtl"] .close-menu { right: auto; left: 20px; }
+html[dir="rtl"] .open-menu {
+  right: auto;
+  left: 20px;
+}
+html[dir="rtl"] .close-menu {
+  right: auto;
+  left: 20px;
+}
 
 /* موبايل */
 @media (max-width: 800px) {
-  .open-menu, .close-menu { display: block; }
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
 
   .menu {
     position: fixed;
@@ -101,21 +140,41 @@ html[dir="rtl"] .close-menu { right: auto; left: 20px; }
   }
 
   /* LTR: تدخل من اليمين */
-  .menu { right: -100%; }
+  .menu {
+    right: -100%;
+  }
   #check:checked ~ .open-menu ~ .menu,
-  #check:checked ~ .menu { right: 0; }
+  #check:checked ~ .menu {
+    right: 0;
+  }
 
   /* RTL: تدخل من اليسار */
-  html[dir="rtl"] .menu { right: auto; left: -100%; }
+  html[dir="rtl"] .menu {
+    right: auto;
+    left: -100%;
+  }
   html[dir="rtl"] #check:checked ~ .open-menu ~ .menu,
-  html[dir="rtl"] #check:checked ~ .menu { left: 0; }
+  html[dir="rtl"] #check:checked ~ .menu {
+    left: 0;
+  }
 
-  .menu li { margin-top: 40px; }
-  .menu li a { padding: 10px; }
+  .menu li {
+    margin-top: 40px;
+  }
+  .menu li a {
+    padding: 10px;
+  }
 }
 
 /* تأثيرات عامة */
-.menu li a { transition: color 0.3s ease; }
-.menu li a:hover { color: #e4ae65; }
-.router-link-active { color: #e4ae65 !important; font-weight: bold !important; }
+.menu li a {
+  transition: color 0.3s ease;
+}
+.menu li a:hover {
+  color: #e4ae65;
+}
+.router-link-active {
+  color: #e4ae65 !important;
+  font-weight: bold !important;
+}
 </style>
