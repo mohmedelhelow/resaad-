@@ -48,17 +48,17 @@
   "serviceSafety": "Safety, Security &\nRisk Assessment",
   "serviceIT": "IT &\nCyber Security",
   "riyadhAlt": "Riyadh",
-  "aboutParagraph2": "At Resaad, we're not just consultants; we are visionary architects reshaping the consultancy landscape...",
+  "aboutParagraph2": "At Resaad, we're not just consultants; we are visionary architects reshaping the consultancy landscape. With a steadfast commitment to excellence and a passion for pioneering change, we are dedicated to charting new courses and navigating the complexities of an ever-evolving global marketplace. Join us as we redefine the essence of consultation, one innovative solution at a time.",
   "ourTeamTitle": "Our Team",
   "team": {
     "ceo": "CEO",
     "coFounder": "Co-Founder",
     "scroll": "Scroll",
     "sulaiman": {
-      "bio": "Sulaiman has led the team to success, specializing in business development and fintech innovation."
+      "bio": "The CEO of Resaad leads the team with over 17 years of experience in banking technology, cash management, sales, and marketing, relying on a strategic blend of project management, relationship-building, and leadership skills. His commitment to quality assurance and innovative approaches has strengthened Resaad’s position as an industry leader, renowned for its client-focused and technologically advanced solutions."
     },
     "mark": {
-      "bio": "Mark is passionate about tech leadership, team building, and client success across the region."
+      "bio": "Mark Trevor, in his dual role as Director at Comment Consulting and as a Principal Consultant, brings a rich legacy of experience from Voltex in the United Kingdom, where as Commercial Director he drove the company’s expansion and boosted revenues through strategic innovations in cash management. His frequent journeys to the Kingdom since 2015 have deepened his understanding of regional cash flows and cultural practices. Mark’s voice is well recognized in the global banking arena through his participation in conferences, and his strategic expertise is reinforced by a Diploma in Financial Management, a Master’s degree in War Studies from King’s College London, and an Engineering degree from the University of Bristol."
     },
     "anne": {
       "bio": "Brings a quarter-century of expertise to the cash industry, with significant contributions in ATM maintenance, Cash in Transit, and Cash Processing. His leadership at Loomis UK managed a substantial budget, overseeing a broad CIT network. As President of ATMs Worldwide for Securitas, he had accountability for a vast array of ATMs across multiple countries. His strategic input has been instrumental in projects for the Central Bank of Kuwait and enhancing profitability for Hong Kong's major note distributor. Dr. Lewis's background in Mathematics and an MBA underpins his strategic and analytical proficiency."
@@ -249,7 +249,11 @@
     "email": "info@resaad.com",
     "phoneLabel": "Phone:",
     "phone": "+966 11 226 8336"
-  }
+  },
+   "SulaimanـAlabbad":"Sulaiman Alabbad",
+  "MarkـTrevor":"Mark Trevor",
+  "DrـAnneـLewis":"Dr Anne Lewis"
+
 
 
 }

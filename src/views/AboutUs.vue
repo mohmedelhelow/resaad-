@@ -160,32 +160,57 @@
           <div class="group relative flex h-96 w-full cursor-pointer flex-col items-center overflow-hidden rounded-2xl bg-white p-8 text-center shadow-md transition-all duration-500">
             <div class="z-10 flex w-full flex-col items-center transition-all duration-500 group-hover:-translate-y-24 group-hover:opacity-0">
               <img src="/images/SULAIMAN ALABBAD.png" alt="Sulaiman Alabbad" class="mb-4 h-[15rem] w-[15rem] rounded-full object-cover" />
-              <div class="mb-1 text-lg font-bold">Sulaiman Alabbad</div>
+              <div class="mb-1 text-lg font-bold">{{ $t('SulaimanـAlabbad') }}</div>
               <div class="mb-2 text-sm text-gray-500">{{ $t('team.ceo') }}</div>
             </div>
-            <div class="absolute bottom-0 left-0 z-20 flex h-full w-full translate-y-16 flex-col items-center justify-center rounded-b-2xl bg-yellow-100 px-6 py-8 opacity-0 shadow-inner transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-              <div class="text-brown-800 mb-1 text-xl font-bold">Sulaiman Alabbad</div>
+            <div class="absolute bottom-0 left-0 z-20 flex h-full w-full translate-y-16 flex-col items-center justify-center rounded-b-2xl bg-yellow-100 bg-gradient-to-r from-[#e6b064] to-white px-6 py-8 opacity-0 shadow-inner transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+              <div class="text-brown-800 mb-1 text-xl font-bold">{{ $t('SulaimanـAlabbad') }}</div>
               <div class="mb-4 text-sm font-semibold text-yellow-900">{{ $t('team.ceo') }}</div>
-              <div class="text-brown-700 text-center text-base font-bold leading-relaxed md:text-lg">
-                {{ $t('team.sulaiman.bio') }}
+              <div class="relative flex w-full flex-col items-center">
+                <div class="text-brown-700 bio-scroll max-h-40 overflow-y-scroll pr-1 text-center text-[12px] font-normal leading-relaxed md:text-sm">
+                  {{ $t('team.sulaiman.bio') }}
+                </div>
+                <!-- Scroll with bouncing black arrow -->
+                <div v-if="!isRTL" class="mt-3 flex flex-col items-center">
+                  <div class="animate-bounce">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" :class="isRTL ? 'rotate-180' : ''">
+                      <path d="M12 5v14m0 0l-7-7m7 7l7-7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div  class="mt-1 select-none text-xs font-bold tracking-wide text-black">
+                    {{ $t('team.scroll') }}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
           <!-- Card 2 -->
+          <!-- Card 2 -->
           <div class="group relative flex h-96 w-full cursor-pointer flex-col items-center overflow-hidden rounded-2xl bg-white p-8 text-center shadow-md transition-all duration-500">
             <div class="z-10 flex w-full flex-col items-center transition-all duration-500 group-hover:-translate-y-24 group-hover:opacity-0">
               <img src="/images/MARK TREVOR.png" alt="Mark Trevor" class="mb-4 h-[15rem] w-[15rem] rounded-full object-cover" />
-              <div class="mb-1 text-lg font-bold">Mark Trevor</div>
+              <div class="mb-1 text-lg font-bold">{{ $t('MarkـTrevor') }}</div>
               <div class="mb-2 text-sm text-gray-500">{{ $t('team.coFounder') }}</div>
             </div>
-            <div class="absolute bottom-0 left-0 z-20 flex h-full w-full translate-y-16 flex-col items-center justify-center rounded-b-2xl bg-yellow-100 px-6 py-8 opacity-0 shadow-inner transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-              <div class="text-brown-800 mb-1 text-xl font-bold">Mark Trevor</div>
-              <div class="mb-4 text-sm font-semibold text-yellow-900">
-                {{ $t('team.coFounder') }}
-              </div>
-              <div class="text-brown-700 text-center text-base font-bold leading-relaxed md:text-lg">
-                {{ $t('team.mark.bio') }}
+            <div class="absolute bottom-0 left-0 z-20 flex h-full w-full translate-y-16 flex-col items-center justify-center rounded-b-2xl bg-yellow-100 bg-gradient-to-r from-[#e6b064] to-white px-6 py-8 opacity-0 shadow-inner transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+              <div class="text-brown-800 mb-1 text-xl font-bold">{{ $t('MarkـTrevor') }}</div>
+              <div class="mb-4 text-sm font-semibold text-yellow-900">{{ $t('team.coFounder') }}</div>
+              <div class="relative flex w-full flex-col items-center">
+                <div class="text-brown-700 bio-scroll max-h-40 overflow-y-scroll pr-1 text-center text-[12px] font-normal leading-relaxed md:text-sm">
+                  {{ $t('team.mark.bio') }}
+                </div>
+                <!-- Scroll with bouncing black arrow -->
+                <div v-if="!isRTL" class="mt-3 flex flex-col items-center">
+                  <div class="animate-bounce">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" :class="isRTL ? 'rotate-180' : ''">
+                      <path d="M12 5v14m0 0l-7-7m7 7l7-7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </div>
+                  <div class="mt-1 select-none text-xs font-bold tracking-wide text-black">
+                    {{ $t('team.scroll') }}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -193,12 +218,12 @@
           <!-- Card 3 -->
           <div class="group relative flex h-96 w-full cursor-pointer flex-col items-center overflow-hidden rounded-2xl bg-white p-8 text-center shadow-md transition-all duration-500">
             <div class="z-10 flex w-full flex-col items-center transition-all duration-500 group-hover:-translate-y-24 group-hover:opacity-0">
-              <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Dr Anne Lewis" class="mb-4 h-[15rem] w-[15rem] rounded-full object-cover" />
-              <div class="mb-1 text-lg font-bold">Dr Anne Lewis</div>
+              <img src="/images/DR ANNE LEWIS.png" alt="Dr Anne Lewis" class="mb-4 h-[15rem] w-[15rem] rounded-full object-cover" />
+              <div class="mb-1 text-lg font-bold">{{ $t('DrـAnneـLewis') }}</div>
               <div class="mb-2 text-sm text-gray-500">{{ $t('team.coFounder') }}</div>
             </div>
-            <div class="absolute bottom-0 left-0 z-20 flex h-full w-full translate-y-16 flex-col items-center justify-center rounded-b-2xl bg-yellow-100 px-6 py-8 opacity-0 shadow-inner transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
-              <div class="text-brown-800 mb-1 text-xl font-bold">Dr Anne Lewis</div>
+            <div class="absolute bottom-0 left-0 z-20 flex h-full w-full translate-y-16 flex-col items-center justify-center rounded-b-2xl bg-yellow-100 bg-gradient-to-r from-[#e6b064] to-white px-6 py-8 opacity-0 shadow-inner transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+              <div class="text-brown-800 mb-1 text-xl font-bold">{{ $t('DrـAnneـLewis') }}</div>
               <div class="mb-4 text-sm font-semibold text-yellow-900">
                 {{ $t('team.coFounder') }}
               </div>
@@ -207,7 +232,7 @@
                   {{ $t('team.anne.bio') }}
                 </div>
                 <!-- Scroll with bouncing black arrow -->
-                <div class="mt-3 flex flex-col items-center">
+                <div v-if="!isRTL" class="mt-3 flex flex-col items-center">
                   <div class="animate-bounce">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" :class="isRTL ? 'rotate-180' : ''">
                       <path d="M12 5v14m0 0l-7-7m7 7l7-7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />

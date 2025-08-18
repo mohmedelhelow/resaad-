@@ -9,7 +9,7 @@
 
           <img src="/images/ourservices img.png" :alt="te('services.heroAlt') ? t('services.heroAlt') : 'Services'" class="about-image relative z-[95] h-full w-full object-cover" />
 
-          <h1 class="about-title absolute left-1/2 top-[15%] z-[100] w-full -translate-x-1/2 select-none text-center text-[2.6rem] font-extrabold uppercase leading-none tracking-[0.3em] text-black md:text-[7.5rem]">
+          <h1 class="about-title absolute left-1/2 top-[15%] z-[100] w-full -translate-x-1/2 select-none text-center text-[2.6rem] font-extrabold leading-none tracking-[0.3em] text-black md:text-[7.5rem]">
             {{ te('ourServices') ? t('ourServices') : 'Our Services' }}
           </h1>
         </div>
@@ -20,12 +20,12 @@
           <div class="grid gap-6 lg:grid-cols-3">
             <div class="lg:col-span-3">
               <!-- Kicker -->
-              <h3 class="text-base font-semibold uppercase tracking-wider text-amber-700 md:text-lg">
+              <h3 class="text-base font-semibold tracking-wider  md:text-lg">
                 {{ te(`${block}.kicker`) ? t(`${block}.kicker`) : '' }}
               </h3>
 
               <!-- Title -->
-              <h2 class="mt-2 text-3xl font-extrabold md:text-4xl lg:text-5xl">
+              <h2 class="mt-2 text-3xl font-extrabold md:text-4xl lg:text-5xl" style="color: #e4ae65 !important; font-weight: bold !important">
                 {{ te(`${block}.title`) ? t(`${block}.title`) : '' }}
               </h2>
 

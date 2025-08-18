@@ -61,7 +61,7 @@
     <section class="px-4 py-20" style="animation-delay: 0.35s" dir="ltr">
       <div class="mx-auto max-w-[90vw]">
         <div class="flex min-h-[700px] flex-col items-stretch gap-6 overflow-hidden rounded-3xl p-4 md:p-10 lg:flex-row">
-          <div class="flex flex-col justify-center rounded-2xl bg-gradient-to-r from-[#fce7d8] to-white p-6 md:p-10 lg:w-1/2" :class="isRTL ? 'text-right' : 'text-left'">
+          <div class="flex flex-col justify-center rounded-2xl bg-gradient-to-r from-[#e6b064] to-white p-6 md:p-10 lg:w-1/2" :class="isRTL ? 'text-right' : 'text-left'">
             <div class="w-full max-w-[400px] space-y-6" :class="isRTL ? 'ml-auto' : ''">
               <h2 class="text-7xl font-extrabold text-black">{{ $t('aboutUs') }}</h2>
               <h3 class="whitespace-pre-line text-5xl font-bold leading-tight text-black">
@@ -70,9 +70,9 @@
               <p class="text-base text-gray-700 md:text-lg">
                 {{ $t('aboutParagraph') }}
               </p>
-              <button class="w-fit rounded-full border border-black px-6 py-2 text-black transition hover:bg-black hover:text-white">
+              <router-link to="/about" class="mt-12 w-fit rounded-full border border-black px-6 py-2 text-black transition hover:bg-black hover:text-white" style="position: relative; top: 18px">
                 {{ $t('seeMore') }}
-              </button>
+              </router-link>
             </div>
           </div>
           <!-- Right Image -->

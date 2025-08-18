@@ -14,7 +14,7 @@
         <div class="grid items-start gap-12 lg:grid-cols-2">
           <!-- Left: Text -->
           <div>
-            <h2 class="text-4xl font-extrabold tracking-tight text-black md:text-5xl">
+            <h2 class="text-4xl font-extrabold tracking-tight text-black md:text-5xl"  style="color: #e4ae65 !important">
               {{ $t('contactus.heading') }}
             </h2>
 
