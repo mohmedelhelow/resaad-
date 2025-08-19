@@ -6,15 +6,17 @@ import ar from './locales/ar.json'
 export const STORAGE_KEY = 'app_locale'
 
 /**
+ * Get saved locale safely
  * @returns {'ar' | 'en'}
  */
 function safeGetLocale() {
   try {
     const saved = typeof window !== 'undefined' ? localStorage.getItem(STORAGE_KEY) : null
     if (saved === 'ar' || saved === 'en') return saved
+
     const lang = typeof navigator !== 'undefined' ? navigator.language : 'en'
     return lang && lang.startsWith('ar') ? 'ar' : 'en'
-  } catch  {
+  } catch {
     return 'en'
   }
 }
@@ -28,7 +30,7 @@ const i18n = createI18n({
 })
 
 /**
- * غيّر اللغة برمجيًا (اختياري)
+ * Change language programmatically
  * @param {'ar'|'en'} locale
  */
 export function setLocale(locale) {
@@ -38,10 +40,11 @@ export function setLocale(locale) {
   } else {
     i18n.global.locale = locale
   }
+
   try {
     localStorage.setItem(STORAGE_KEY, locale)
-  } catch  {
-  return 'en'
+  } catch {
+    // do nothing
   }
 }
 
