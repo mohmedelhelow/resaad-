@@ -8,7 +8,7 @@
           </a>
 
           <p class="text-[14px] sm:text-[15px] mt-[30px] mb-[60px] relative after:content-[''] after:absolute after:left-1/2 after:-bottom-[30px] after:w-[90%] sm:after:w-[80%] after:h-px after:bg-[#353C46] after:-translate-x-1/2 px-2">
-            {{ $t("footer.description") }}
+            {{ $t("Footer.Description") }}
           </p>
 
           <h6 class="text-[#8b9199] text-[14px] sm:text-[15px] font-normal mb-[10px] leading-relaxed px-2">
