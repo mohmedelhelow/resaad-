@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="section1 pb-16 pt-28">
       <div class="relative mx-auto min-h-[calc(100vh-7rem-4rem)] max-w-[90vw] overflow-hidden rounded-3xl shadow-xl">
-        <img src="/images/homepage1.png" class="absolute inset-0 h-full w-full object-cover" loading="lazy" alt="Background image" />
+        <img src="https://res.cloudinary.com/dawdmbyro/image/upload/v1755675265/homepage1_zwpvij.png" class="absolute inset-0 h-full w-full object-cover" loading="lazy" alt="Background image" />
         <div class="absolute inset-0 flex items-start justify-center bg-black bg-opacity-5 px-6 pt-32 md:justify-start">
           <div
             :class="[
