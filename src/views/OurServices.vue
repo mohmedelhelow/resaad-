@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white text-[#0b0b0b] mx-auto max-w-[1400px] px-2 pb-14 pt-16">
+  <section class="bg-white text-[#0b0b0b] mx-auto max-w-[1400px] px-2 pb-14 pt-16 md:pt-16">
     <!-- Title -->
       <!-- صورة وعنوان -->
       <div class="relative mb-8 flex w-full items-center justify-center overflow-hidden rounded-2xl" style="min-height: 220px">

@@ -1,6 +1,7 @@
 <template>
   <div class="mx-auto max-w-[1400px]" :dir="isRTL ? 'rtl' : 'ltr'">
-    <div class="mx-auto max-w-[1400px] px-2 pb-14 pt-16">
+    <!-- زودنا الـpadding-top للموبايل عشان الـnav الثابت -->
+    <div class="mx-auto max-w-[1400px] px-2 pb-14 pt-28 md:pt-16">
       <!-- صورة بانورامية مع العنوان فوقها -->
       <div class="relative mb-8 flex w-full items-center justify-center overflow-hidden rounded-2xl" style="min-height: 220px">
         <img src="/images/aboutus3.png" :alt="$t('riyadhAlt')" class="about-image relative h-full w-full object-cover" style="z-index: 199" />

@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-[1400px] px-2 pb-14 pt-16">
+   <div class="mx-auto max-w-[1400px] px-2 pb-14 pt-28 md:pt-16">
     <!-- صورة وعنوان -->
     <div class="relative mb-8 flex w-full items-center justify-center overflow-hidden rounded-2xl" style="min-height: 220px">
       <img src="/images/contact-US.png" :alt="$t('riyadhAlt2')" class="about-image relative h-full w-full object-cover" style="z-index: 199" />

@@ -3,9 +3,14 @@
     <!-- Hero Section -->
     <section class="section1 pb-16 pt-28">
       <div class="relative mx-auto min-h-[calc(100vh-7rem-4rem)] max-w-[90vw] overflow-hidden rounded-3xl shadow-xl">
-        <img src="/images/homepage1.png" class="absolute inset-0 h-full w-full object-cover"  loading="lazy" alt="Background image" />
+        <img src="/images/homepage1.png" class="absolute inset-0 h-full w-full object-cover" loading="lazy" alt="Background image" />
         <div class="absolute inset-0 flex items-start justify-center bg-black bg-opacity-5 px-6 pt-32 md:justify-start">
-          <div :class="['max-w-2xl text-white md:ml-16', isRTL ? 'text-center md:text-right' : 'text-center md:text-left']">
+          <div
+            :class="[
+              'max-w-2xl text-center text-white', // دايمًا في النص على الموبايل
+              isRTL ? 'md:text-right' : 'md:text-left', // وعلى الشاشات الكبيرة ياخد RTL/LTR
+            ]"
+          >
             <h1 class="text-[clamp(3rem,15vw,12rem)] font-extrabold leading-tight" data-aos="fade-up" data-aos-delay="200">
               {{ $t('Crafting') }}
             </h1>
@@ -21,7 +26,7 @@
     <section class="bg-white px-4 py-24" style="animation-delay: 0.15s">
       <div class="mx-auto grid max-w-[90vw] items-center gap-16 lg:grid-cols-2">
         <div class="order-2 lg:order-1">
-          <img src="/images/riyadh.jpg" alt="Expo 2030" class="mx-auto max-h-[500px] w-full rounded-3xl object-cover shadow-xl"  loading="lazy" data-aos="fade-right" data-aos-delay="200" />
+          <img src="/images/riyadh.jpg" alt="Expo 2030" class="mx-auto max-h-[500px] w-full rounded-3xl object-cover shadow-xl" loading="lazy" data-aos="fade-right" data-aos-delay="200" />
         </div>
         <div class="order-1 lg:order-2" :class="isRTL ? 'text-right' : 'text-left'">
           <h2 class="text-black-900 mb-4 text-sm font-semibold tracking-wider" data-aos="fade-left" data-aos-delay="200">
@@ -105,7 +110,7 @@
 
           <!-- Mission Card -->
           <div class="relative flex h-[320px] w-full items-center overflow-hidden rounded-2xl shadow-md md:h-[400px]">
-            <img src="https://i.postimg.cc/pL6xtrTv/shutterstock-2496010827.jpg" loading="lazy"  alt="Mission" class="absolute inset-0 h-full w-full object-cover" />
+            <img src="https://i.postimg.cc/pL6xtrTv/shutterstock-2496010827.jpg" loading="lazy" alt="Mission" class="absolute inset-0 h-full w-full object-cover" />
             <div class="absolute inset-0 bg-gradient-to-r from-black/90 to-transparent" :class="isRTL ? 'bg-gradient-to-l' : 'bg-gradient-to-r'"></div>
             <div class="relative z-10 p-8">
               <h3 class="mb-2 text-5xl font-extrabold text-white md:text-6xl" data-aos="fade-up" data-aos-delay="200">
@@ -144,9 +149,9 @@
 
         <!-- Desktop Grid -->
         <div class="hidden grid-cols-2 gap-8 md:grid">
+          <!-- Integrity -->
           <div class="min-h-[300px] rounded-xl bg-white p-8 shadow-md" style="animation-delay: 0.6s">
-            <div class="mb-4 text-4xl text-indigo-600">
-              <!-- Integrity Icon -->
+            <div class="mb-4 text-4xl">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#e4ae65]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 4l7 4v4.36c0 4.418-3.134 8.418-7 9.64-3.866-1.222-7-5.222-7-9.64V8l7-4z" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" />
@@ -156,9 +161,9 @@
             <p class="text-gray-600">{{ $t('integrityText') }}</p>
           </div>
 
+          <!-- Innovation -->
           <div class="min-h-[300px] rounded-xl bg-white p-8 shadow-md" style="animation-delay: 0.7s">
-            <div class="mb-4 text-4xl text-indigo-600">
-              <!-- Innovation Icon -->
+            <div class="mb-4 text-4xl">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#e4ae65]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                 <circle cx="12" cy="12" r="4" stroke-linecap="round" stroke-linejoin="round" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 2v2m0 16v2m10-8h-2M4 12H2m15.07-7.07l-1.42 1.42M6.34 17.66l-1.42 1.42m0-13.08l1.42 1.42M17.66 17.66l1.42 1.42" />
@@ -168,9 +173,9 @@
             <p class="text-gray-600">{{ $t('innovationText') }}</p>
           </div>
 
+          <!-- Excellence -->
           <div class="min-h-[300px] rounded-xl bg-white p-8 shadow-md" style="animation-delay: 0.8s">
-            <div class="mb-4 text-4xl text-indigo-600">
-              <!-- Excellence Icon -->
+            <div class="mb-4 text-4xl">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#e4ae65]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 17.75l-5.42 3.53 1.63-6.33L3 10.47l6.53-.57L12 4.25l2.47 5.65 6.53.57-5.21 4.48 1.63 6.33z" />
               </svg>
@@ -179,9 +184,9 @@
             <p class="text-gray-600">{{ $t('excellenceText') }}</p>
           </div>
 
+          <!-- Client Centric -->
           <div class="min-h-[300px] rounded-xl bg-white p-8 shadow-md" style="animation-delay: 0.9s">
-            <div class="mb-4 text-4xl text-indigo-600">
-              <!-- Client Centric Icon -->
+            <div class="mb-4 text-4xl">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-[#e4ae65]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                 <circle cx="12" cy="12" r="8" stroke-linecap="round" stroke-linejoin="round" />
                 <circle cx="12" cy="12" r="3" stroke-linecap="round" stroke-linejoin="round" />
@@ -218,62 +223,59 @@
     </section>
 
     <!-- Services Section -->
-    <div class="mx-auto flex max-w-[1400px] flex-col items-start justify-start bg-white px-8 py-10" style="animation-delay: 1s" :class="isRTL ? 'text-right' : 'text-left'">
+    <section class="mx-auto flex max-w-[1400px] flex-col items-start justify-start bg-white px-8 py-10" style="animation-delay: 1s" :class="isRTL ? 'text-right' : 'text-left'">
       <h1 class="mb-12 text-4xl font-bold">{{ $t('ourServices') }}</h1>
+
       <div class="mx-auto grid w-full max-w-[1400px] grid-cols-1 gap-8 md:grid-cols-2">
+        <!-- Banking -->
         <div class="flex min-h-[170px] items-center justify-between rounded-2xl border border-gray-200 bg-gray-100 p-8 shadow-sm transition hover:shadow-lg">
           <div class="whitespace-pre-line text-2xl font-bold leading-tight md:text-2xl">
             {{ $t('serviceBanking') }}
           </div>
-          <button class="flex h-12 w-12 items-center justify-center rounded-full bg-black transition hover:bg-gray-800">
-            <span class="text-2xl text-yellow-400">
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-7 w-7" :class="isRTL ? 'rotate-180' : ''">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </span>
+          <button class="flex h-12 w-12 items-center justify-center rounded-full bg-black transition hover:bg-gray-800" aria-label="Go">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-7 w-7 text-yellow-400" :class="isRTL ? 'rotate-180' : ''">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
           </button>
         </div>
 
+        <!-- Audit -->
         <div class="flex min-h-[170px] items-center justify-between rounded-2xl border border-gray-200 bg-gray-100 p-8 shadow-sm transition hover:shadow-lg">
           <div class="whitespace-pre-line text-2xl font-bold leading-tight md:text-2xl">
             {{ $t('serviceAudit') }}
           </div>
-          <button class="flex h-12 w-12 items-center justify-center rounded-full bg-black transition hover:bg-gray-800">
-            <span class="text-2xl text-yellow-400">
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-7 w-7" :class="isRTL ? 'rotate-180' : ''">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </span>
+          <button class="flex h-12 w-12 items-center justify-center rounded-full bg-black transition hover:bg-gray-800" aria-label="Go">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-7 w-7 text-yellow-400" :class="isRTL ? 'rotate-180' : ''">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
           </button>
         </div>
 
+        <!-- Safety -->
         <div class="flex min-h-[170px] items-center justify-between rounded-2xl border border-gray-200 bg-gray-100 p-8 shadow-sm transition hover:shadow-lg">
           <div class="whitespace-pre-line text-2xl font-bold leading-tight md:text-2xl">
             {{ $t('serviceSafety') }}
           </div>
-          <button class="flex h-12 w-12 items-center justify-center rounded-full bg-black transition hover:bg-gray-800">
-            <span class="text-2xl text-yellow-400">
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-7 w-7" :class="isRTL ? 'rotate-180' : ''">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </span>
+          <button class="flex h-12 w-12 items-center justify-center rounded-full bg-black transition hover:bg-gray-800" aria-label="Go">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-7 w-7 text-yellow-400" :class="isRTL ? 'rotate-180' : ''">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
           </button>
         </div>
 
+        <!-- IT -->
         <div class="flex min-h-[170px] items-center justify-between rounded-2xl border border-gray-200 bg-gray-100 p-8 shadow-sm transition hover:shadow-lg">
           <div class="whitespace-pre-line text-2xl font-bold leading-tight md:text-2xl">
             {{ $t('serviceIT') }}
           </div>
-          <button class="flex h-12 w-12 items-center justify-center rounded-full bg-black transition hover:bg-gray-800">
-            <span class="text-2xl text-yellow-400">
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-7 w-7" :class="isRTL ? 'rotate-180' : ''">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-              </svg>
-            </span>
+          <button class="flex h-12 w-12 items-center justify-center rounded-full bg-black transition hover:bg-gray-800" aria-label="Go">
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-7 w-7 text-yellow-400" :class="isRTL ? 'rotate-180' : ''">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
           </button>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
@@ -285,6 +287,25 @@ const { locale } = useI18n()
 const isRTL = computed(() => locale.value === 'ar')
 
 onMounted(() => {
-  if (window?.AOS?.init) AOS.init()
+  const isMobile = window.matchMedia('(max-width: 767px)').matches
+  if (window?.AOS?.init) {
+    AOS.init({
+      disable: () => isMobile, // عطّل AOS على الموبايل
+      once: true,
+      duration: 600,
+      easing: 'ease-out',
+    })
+  }
 })
 </script>
+
+<style>
+/* عطّل أي أنيميشن AOS على الموبايل وتفادي فلاش العناصر */
+@media (max-width: 767px) {
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+</style>

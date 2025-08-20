@@ -1,37 +1,37 @@
 <template>
   <header>
-    <nav class="bg-white fixed w-full z-[1000] top-0 left-0 border-gray-200 dark:border-gray-600">
-      <div class="max-w-[1350px] mx-auto">
-        <div class="max-w-[85vw] flex justify-between items-center relative mx-auto py-8">
+    <nav class="fixed left-0 top-0 z-[1000] w-full border-gray-200 bg-white dark:border-gray-600">
+      <div class="mx-auto max-w-[1350px]">
+        <div class="relative mx-auto flex max-w-[85vw] items-center justify-between py-8">
           <!-- Logo -->
           <a class="logo block w-[80px]" href="#">
-            <img src="https://res.cloudinary.com/dawdmbyro/image/upload/v1755652630/Resaad_Colored_fmxp0s.png" loading="lazy"  alt="Resaad Logo" class="w-full h-auto" />
+            <img src="https://res.cloudinary.com/dawdmbyro/image/upload/f_auto,q_auto,dpr_auto,w_220,c_scale/v1755652630/Resaad_Colored_fmxp0s.png" alt="Resaad Logo" width="220" height="56" class="h-auto w-[220px]" />
           </a>
           <!-- Mobile toggle -->
           <input type="checkbox" id="check" ref="menuCheck" class="hidden" />
-          <label for="check" class="open-menu select-none cursor-pointer text-2xl">≡</label>
+          <label for="check" class="open-menu cursor-pointer select-none text-2xl">≡</label>
           <!-- Menu -->
-          <ul class="menu flex items-center [&>li>a]:text-center [&>li>a]:relative [&>li>a]:transition [&>li>a]:duration-200 [&>li>a]:ease-in-out [&>li>a]:font-medium [&>li>a]:text-lg [&>li]:ps-8">
+          <ul class="menu flex items-center [&>li>a]:relative [&>li>a]:text-center [&>li>a]:text-lg [&>li>a]:font-medium [&>li>a]:transition [&>li>a]:duration-200 [&>li>a]:ease-in-out [&>li]:ps-8">
             <li>
-              <RouterLink to="/" @click="closeMenu">{{ $t("home") }}</RouterLink>
+              <RouterLink to="/" @click="closeMenu">{{ $t('home') }}</RouterLink>
             </li>
             <li>
-              <RouterLink to="/about" @click="closeMenu">{{ $t("about") }}</RouterLink>
+              <RouterLink to="/about" @click="closeMenu">{{ $t('about') }}</RouterLink>
             </li>
             <li>
-              <RouterLink to="/services" @click="closeMenu">{{ $t("services2") }}</RouterLink>
+              <RouterLink to="/services" @click="closeMenu">{{ $t('services2') }}</RouterLink>
             </li>
             <li>
               <!-- تم تعديل المفتاح هنا -->
-              <RouterLink to="/contact" @click="closeMenu">{{ $t("titleContact") }}</RouterLink>
+              <RouterLink to="/contact" @click="closeMenu">{{ $t('titleContact') }}</RouterLink>
             </li>
 
             <li style="color: #e4ae65 !important; font-weight: bold !important">
               <button
                 @click="
                   () => {
-                    toggleLang();
-                    closeMenu();
+                    toggleLang()
+                    closeMenu()
                   }
                 "
               >
@@ -47,44 +47,44 @@
 </template>
 
 <script setup>
-import { useI18n } from "vue-i18n";
-import { computed, onMounted, watch, ref, onBeforeUnmount } from "vue";
-import { useRouter } from "vue-router";
+import { useI18n } from 'vue-i18n'
+import { computed, onMounted, watch, ref, onBeforeUnmount } from 'vue'
+import { useRouter } from 'vue-router'
 
-const { locale } = useI18n();
-const router = useRouter();
+const { locale } = useI18n()
+const router = useRouter()
 
-const langCode = computed(() => (locale.value || "").slice(0, 2).toLowerCase());
-const switchLabel = computed(() => (langCode.value === "en" ? "عربي" : "English"));
-const isRTL = computed(() => langCode.value === "ar");
+const langCode = computed(() => (locale.value || '').slice(0, 2).toLowerCase())
+const switchLabel = computed(() => (langCode.value === 'en' ? 'عربي' : 'English'))
+const isRTL = computed(() => langCode.value === 'ar')
 
 const toggleLang = () => {
-  locale.value = isRTL.value ? "en" : "ar";
-};
+  locale.value = isRTL.value ? 'en' : 'ar'
+}
 
 // RTL/LTR على <html>
 const applyDir = () => {
-  document.documentElement.dir = isRTL.value ? "rtl" : "ltr";
-  document.documentElement.lang = langCode.value;
-};
-onMounted(applyDir);
-watch(locale, applyDir);
+  document.documentElement.dir = isRTL.value ? 'rtl' : 'ltr'
+  document.documentElement.lang = langCode.value
+}
+onMounted(applyDir)
+watch(locale, applyDir)
 
 // اقفال منيو الموبايل
-const menuCheck = ref(null);
+const menuCheck = ref(null)
 const closeMenu = () => {
-  if (menuCheck.value) menuCheck.value.checked = false;
-};
+  if (menuCheck.value) menuCheck.value.checked = false
+}
 
 // اقفلها بعد أي انتقال روت
-router.afterEach(() => closeMenu());
+router.afterEach(() => closeMenu())
 
 // اختياري: زر Esc يقفلها
 const onEsc = (e) => {
-  if (e.key === "Escape") closeMenu();
-};
-onMounted(() => window.addEventListener("keydown", onEsc));
-onBeforeUnmount(() => window.removeEventListener("keydown", onEsc));
+  if (e.key === 'Escape') closeMenu()
+}
+onMounted(() => window.addEventListener('keydown', onEsc))
+onBeforeUnmount(() => window.removeEventListener('keydown', onEsc))
 </script>
 
 <style>
@@ -108,11 +108,11 @@ onBeforeUnmount(() => window.removeEventListener("keydown", onEsc));
 }
 
 /* RTL */
-html[dir="rtl"] .open-menu {
+html[dir='rtl'] .open-menu {
   right: auto;
   left: 20px;
 }
-html[dir="rtl"] .close-menu {
+html[dir='rtl'] .close-menu {
   right: auto;
   left: 20px;
 }
@@ -150,12 +150,12 @@ html[dir="rtl"] .close-menu {
   }
 
   /* RTL: تدخل من اليسار */
-  html[dir="rtl"] .menu {
+  html[dir='rtl'] .menu {
     right: auto;
     left: -100%;
   }
-  html[dir="rtl"] #check:checked ~ .open-menu ~ .menu,
-  html[dir="rtl"] #check:checked ~ .menu {
+  html[dir='rtl'] #check:checked ~ .open-menu ~ .menu,
+  html[dir='rtl'] #check:checked ~ .menu {
     left: 0;
   }
 
