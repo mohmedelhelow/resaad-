@@ -4,7 +4,7 @@
     <div class="mx-auto max-w-[1400px] px-2 pb-14 pt-28 md:pt-16">
       <!-- صورة بانورامية مع العنوان فوقها -->
       <div class="relative mb-8 flex w-full items-center justify-center overflow-hidden rounded-2xl" style="min-height: 220px">
-        <img src="/images/aboutus3.png" :alt="$t('riyadhAlt')" class="about-image relative h-full w-full object-cover" style="z-index: 199" />
+        <img src="https://res.cloudinary.com/dawdmbyro/image/upload/v1755675251/aboutus_img2_wss4py.png" :alt="$t('riyadhAlt')" class="about-image relative h-full w-full object-cover" style="z-index: 199" />
         <!-- العنوان فوق الصورة -->
         <h1 class="about-title absolute left-1/2 top-[15%] z-[100] -translate-x-1/2 select-none whitespace-nowrap text-center text-[2rem] font-extrabold leading-none text-black md:text-[6rem] lg:text-[8rem]" :class="isRTL ? 'uppercase:!normal-case tracking-normal' : 'uppercase tracking-[0.3em]'">
           {{ $t('aboutUs') }}

@@ -3,7 +3,7 @@
     <!-- Title -->
     <!-- صورة وعنوان -->
     <div class="relative mb-8 flex w-full items-center justify-center overflow-hidden rounded-2xl" style="min-height: 220px">
-      <img src="/images/ourservices img.png" :alt="$t('riyadhAlt2')" class="about-image relative h-full w-full object-cover" style="z-index: 199" />
+      <img src="https://res.cloudinary.com/dawdmbyro/image/upload/v1755675309/contact-US_wuwf61.png" :alt="$t('riyadhAlt2')" class="about-image relative h-full w-full object-cover" style="z-index: 199" />
       <h1 class="about-title absolute left-1/2 top-[15%] z-[100] -translate-x-1/2 select-none whitespace-nowrap text-center text-[2.2rem] font-extrabold uppercase leading-none tracking-[0.05em] text-black sm:text-[3.2rem] sm:tracking-[0.1em] md:text-[6rem] md:tracking-[0.2em] lg:text-[8rem]">
         {{ $t('ourServices') }}
       </h1>

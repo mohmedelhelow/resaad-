@@ -2,7 +2,7 @@
    <div class="mx-auto max-w-[1400px] px-2 pb-14 pt-28 md:pt-16">
     <!-- صورة وعنوان -->
     <div class="relative mb-8 flex w-full items-center justify-center overflow-hidden rounded-2xl" style="min-height: 220px">
-      <img src="/images/contact-US.png" :alt="$t('riyadhAlt2')" class="about-image relative h-full w-full object-cover" style="z-index: 199" />
+      <img src="https://res.cloudinary.com/dawdmbyro/image/upload/v1755675279/ourservices_img_v5uc6b.png" :alt="$t('riyadhAlt2')" class="about-image relative h-full w-full object-cover" style="z-index: 199" />
       <h1 class="about-title absolute left-1/2 top-[15%] z-[100] -translate-x-1/2 select-none whitespace-nowrap text-center text-[2.5rem] font-extrabold uppercase leading-none tracking-[0.3em] text-black md:text-[8rem]">
         {{ $t('titleContact') }}
       </h1>
