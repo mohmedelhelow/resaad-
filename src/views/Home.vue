@@ -3,7 +3,7 @@
     <!-- Hero Section -->
     <section class="section1 pb-16 pt-28">
       <div class="relative mx-auto min-h-[calc(100vh-7rem-4rem)] max-w-[90vw] overflow-hidden rounded-3xl shadow-xl">
-        <img src="/images/homepage1.png" class="absolute inset-0 h-full w-full object-cover" alt="Background image" />
+        <img src="/images/homepage1.png" class="absolute inset-0 h-full w-full object-cover"  loading="lazy" alt="Background image" />
         <div class="absolute inset-0 flex items-start justify-center bg-black bg-opacity-5 px-6 pt-32 md:justify-start">
           <div :class="['max-w-2xl text-white md:ml-16', isRTL ? 'text-center md:text-right' : 'text-center md:text-left']">
             <h1 class="text-[clamp(3rem,15vw,12rem)] font-extrabold leading-tight" data-aos="fade-up" data-aos-delay="200">
@@ -21,7 +21,7 @@
     <section class="bg-white px-4 py-24" style="animation-delay: 0.15s">
       <div class="mx-auto grid max-w-[90vw] items-center gap-16 lg:grid-cols-2">
         <div class="order-2 lg:order-1">
-          <img src="/images/riyadh.jpg" alt="Expo 2030" class="mx-auto max-h-[500px] w-full rounded-3xl object-cover shadow-xl" data-aos="fade-right" data-aos-delay="200" />
+          <img src="/images/riyadh.jpg" alt="Expo 2030" class="mx-auto max-h-[500px] w-full rounded-3xl object-cover shadow-xl"  loading="lazy" data-aos="fade-right" data-aos-delay="200" />
         </div>
         <div class="order-1 lg:order-2" :class="isRTL ? 'text-right' : 'text-left'">
           <h2 class="text-black-900 mb-4 text-sm font-semibold tracking-wider" data-aos="fade-left" data-aos-delay="200">
@@ -52,7 +52,7 @@
           </p>
         </div>
         <div class="order-1 lg:order-2">
-          <img src="/images/2030new.png" alt="Expo 2030" class="mx-auto max-h-[500px] w-full rounded-3xl object-cover shadow-xl" data-aos="fade-left" data-aos-delay="200" />
+          <img src="/images/2030new.png" alt="Expo 2030" class="mx-auto max-h-[500px] w-full rounded-3xl object-cover shadow-xl" loading="lazy" data-aos="fade-left" data-aos-delay="200" />
         </div>
       </div>
     </section>
@@ -84,7 +84,7 @@
 
           <!-- Right Image -->
           <div class="overflow-hidden rounded-2xl shadow-md lg:w-1/2">
-            <img src="/images/neom-xXqWVUvf_Gw-unsplash.jpg" alt="Desert Landscape" class="h-64 w-full object-cover md:h-full" />
+            <img src="/images/neom-xXqWVUvf_Gw-unsplash.jpg" alt="Desert Landscape" loading="lazy" class="h-64 w-full object-cover md:h-full" />
           </div>
         </div>
       </div>
@@ -105,7 +105,7 @@
 
           <!-- Mission Card -->
           <div class="relative flex h-[320px] w-full items-center overflow-hidden rounded-2xl shadow-md md:h-[400px]">
-            <img src="https://i.postimg.cc/pL6xtrTv/shutterstock-2496010827.jpg" alt="Mission" class="absolute inset-0 h-full w-full object-cover" />
+            <img src="https://i.postimg.cc/pL6xtrTv/shutterstock-2496010827.jpg" loading="lazy"  loading="lazy" alt="Mission" class="absolute inset-0 h-full w-full object-cover" />
             <div class="absolute inset-0 bg-gradient-to-r from-black/90 to-transparent" :class="isRTL ? 'bg-gradient-to-l' : 'bg-gradient-to-r'"></div>
             <div class="relative z-10 p-8">
               <h3 class="mb-2 text-5xl font-extrabold text-white md:text-6xl" data-aos="fade-up" data-aos-delay="200">
@@ -119,7 +119,7 @@
 
           <!-- Vision Card -->
           <div class="relative flex h-[320px] w-full items-center overflow-hidden rounded-2xl shadow-md md:h-[400px]">
-            <img src="/images/shutterstock_2405956819.jpg" alt="Vision" class="absolute inset-0 h-full w-full object-cover" />
+            <img src="/images/shutterstock_2405956819.jpg" alt="Vision" loading="lazy" class="absolute inset-0 h-full w-full object-cover" />
             <div class="absolute inset-0" :class="isRTL ? 'bg-gradient-to-l from-black/90 to-transparent' : 'bg-gradient-to-r from-black/90 to-transparent'"></div>
             <div class="relative z-10 p-8">
               <h3 class="mb-2 text-5xl font-extrabold text-white md:text-6xl" data-aos="fade-up" data-aos-delay="200">
