@@ -5,7 +5,7 @@
         <div class="max-w-[85vw] flex justify-between items-center relative mx-auto py-8">
           <!-- Logo -->
           <a class="logo block w-[80px]" href="#">
-            <img src="/images/Resaad Colored.png" loading="lazy"  alt="Resaad Logo" class="w-full h-auto" />
+            <img src="https://res.cloudinary.com/dawdmbyro/image/upload/v1755652630/Resaad_Colored_fmxp0s.png" loading="lazy"  alt="Resaad Logo" class="w-full h-auto" />
           </a>
           <!-- Mobile toggle -->
           <input type="checkbox" id="check" ref="menuCheck" class="hidden" />
