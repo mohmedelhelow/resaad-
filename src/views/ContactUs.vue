@@ -4,7 +4,7 @@
     <div class="relative mb-8 flex w-full items-center justify-center overflow-hidden rounded-2xl" style="min-height: 220px">
       <img src="/images/contact-US.png" :alt="$t('riyadhAlt2')" class="about-image relative h-full w-full object-cover" style="z-index: 199" />
       <h1 class="about-title absolute left-1/2 top-[15%] z-[100] -translate-x-1/2 select-none whitespace-nowrap text-center text-[2.5rem] font-extrabold uppercase leading-none tracking-[0.3em] text-black md:text-[8rem]">
-        {{ $t('titlecontact.contact') }}
+        {{ $t('titleContact') }}
       </h1>
     </div>
 
@@ -15,31 +15,31 @@
           <!-- Left: Text -->
           <div>
             <h2 class="text-4xl font-extrabold tracking-tight text-black md:text-5xl"  style="color: #e4ae65 !important">
-              {{ $t('contactus.heading') }}
+              {{ $t('contactHeading') }}
             </h2>
 
-            <p class="mt-6 max-w-prose text-lg text-gray-700" v-html="$t('contactus.description')"></p>
+            <p class="mt-6 max-w-prose text-lg text-gray-700" v-html="$t('contactDescription')"></p>
 
             <div class="mt-10 grid gap-10 sm:grid-cols-2">
               <!-- Address + Email -->
               <div class="space-y-8">
                 <div>
                   <h3 class="text-xl font-semibold text-black">
-                    {{ $t('contactus.addressLabel') }}
+                    {{ $t('contactAddressLabel') }}
                   </h3>
                   <ul class="mt-3 list-disc pl-5 leading-relaxed text-gray-800">
-                    <li>{{ $t('footer.addressOS') }}</li>
+                    <li>{{ $t('contactAddress') }}</li>
                   </ul>
                 </div>
 
                 <div>
                   <h3 class="text-xl font-semibold text-black">
-                    {{ $t('contactus.emailLabel') }}
+                    {{ $t('contactEmailLabel') }}
                   </h3>
                   <ul class="mt-3 list-disc pl-5 text-gray-800">
                     <li>
                       <a :href="`mailto:${$t('contactus.email')}`" class="underline decoration-gray-300 hover:decoration-black">
-                        {{ $t('contactus.email') }}
+                        {{ $t('contactEmail') }}
                       </a>
                     </li>
                   </ul>
@@ -49,12 +49,12 @@
               <!-- Phone -->
               <div>
                 <h3 class="text-xl font-semibold text-black">
-                  {{ $t('contactus.phoneLabel') }}
+                  {{ $t('contactPhoneLabel') }}
                 </h3>
                 <ul class="mt-3 list-disc pl-5 text-gray-800">
                   <li>
                     <a :href="`tel:${$t('footer.phone')}`" class="underline decoration-gray-300 hover:decoration-black">
-                      {{ $t('footer.phone') }}
+                      {{ $t('contactPhone') }}
                     </a>
                   </li>
                 </ul>

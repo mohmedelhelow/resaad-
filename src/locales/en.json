@@ -1,10 +1,9 @@
 {
-  "title": {
-    "home": "Home",
-    "about": "About Us",
-    "services": "Services",
-    "contact": "Contact Us"
-  },
+  "titleHome": "Home",
+  "titleAbout": "About Us",
+  "titleServices": "Services",
+  "titleContact": "Contact Us",
+
   "hello": "Hello",
   "home": "Home",
   "about": "About",
@@ -14,246 +13,186 @@
   "menu": "Menu",
   "close": "Close",
   "welcome": "Welcome to our site",
+
   "siteName": "Ressad",
+
   "Crafting": "Crafting",
   "blueprint": "the blueprint for success",
+
   "Contribution": "Resaad’s Contribution",
   "expoContribution": "Our Contribution to Expo 2030",
   "expoParagraph": "Resaad is dedicated to making a substantial contribution to Expo 2030 in alignment with the global event. Our commitment involves showcasing our expertise in various pioneering solutions across our services, adding value to the overall success of the Expo. We are eager to contribute significantly to the achievement of Expo's goals and objectives.",
+
   "visionAlignment": "Our Alignment with Vision 2030",
   "visionParagraph": "Resaad is firmly aligned with the transformative goals outlined in Saudi Vision 2030, contributing to the nation's progress through innovative solutions and strategic initiatives. Our commitment to innovation, sustainability, and social progress reflects our dedication to the vision, making Resaad a proactive partner in shaping a prosperous and sustainable future for Saudi Arabia.",
+
   "aboutUs": "About Us",
   "aboutTagline": "Your Strategic Partner in\nConsultation Services",
   "aboutParagraph": "Resaad, emerging from the vibrant heart of Riyadh, is a trailblazer in the realm of consultancy. Our firm is where traditional business acumen meets cutting-edge innovation, crafting a legacy of transformative solutions.",
   "seeMore": "See More",
+
   "missionVisionTitle": "Our Mission & Vision",
   "missionVisionSubtitle": "Steering Progress, Envisioning Excellence",
+
   "mission": "Mission",
   "missionParagraph": "To revolutionize consultancy with ingenuity and expertise, empowering businesses with innovative solutions for today’s challenges. Our focus is on immediate impact, ensuring safety, security, and strategic growth.",
+
   "vision": "Vision",
   "visionParagraphCard": "Envisioning Resaad as a beacon of transformative thinking, our aim is to lead and redefine the consultancy landscape, setting new benchmarks of excellence for the future across the Middle East and beyond.",
+
   "coreValuesTitle": "Core Values",
   "coreValuesSubtitle": "Our guiding principles on the journey",
+
   "integrityTitle": "Integrity",
   "integrityText": "At Resaad, integrity is the foundation of everything we do. We embrace the highest ethical standards, ensuring transparency and trust in every interaction as the cornerstone of our professional ethics.",
+
   "innovationTitle": "Spirit of Innovation",
   "innovationText": "Innovation is our driving force. We constantly push boundaries to explore new horizons, ensuring that every solution we provide not only addresses today’s challenges but also anticipates tomorrow’s opportunities.",
+
   "excellenceTitle": "Pursuit of Excellence",
   "excellenceText": "Our commitment to excellence is unwavering. In every endeavor, we strive to exceed expectations, deliver outstanding quality, and set new industry standards—reflecting our dedication to being the best at what we do.",
+
   "clientCentricTitle": "Client-Centric Approach",
   "clientCentricText": "Our clients are at the heart of everything we do. We are fully committed to understanding their unique needs and delivering tailored, impactful solutions that drive their success.",
+
   "ourServices": "Our Services",
   "serviceBanking": "Banking & Cash\nManagement",
   "serviceAudit": "Audit &\nInspection",
   "serviceSafety": "Safety, Security &\nRisk Assessment",
   "serviceIT": "IT &\nCyber Security",
+
   "riyadhAlt": "Riyadh",
   "aboutParagraph2": "At Resaad, we're not just consultants; we are visionary architects reshaping the consultancy landscape. With a steadfast commitment to excellence and a passion for pioneering change, we are dedicated to charting new courses and navigating the complexities of an ever-evolving global marketplace. Join us as we redefine the essence of consultation, one innovative solution at a time.",
-  "ourTeamTitle": "Our Team",
-  "team": {
-    "ceo": "CEO",
-    "coFounder": "Co-Founder",
-    "scroll": "Scroll",
-    "sulaiman": {
-      "bio": "The CEO of Resaad leads the team with over 17 years of experience in banking technology, cash management, sales, and marketing, relying on a strategic blend of project management, relationship-building, and leadership skills. His commitment to quality assurance and innovative approaches has strengthened Resaad’s position as an industry leader, renowned for its client-focused and technologically advanced solutions."
-    },
-    "mark": {
-      "bio": "Mark Trevor, in his dual role as Director at Comment Consulting and as a Principal Consultant, brings a rich legacy of experience from Voltex in the United Kingdom, where as Commercial Director he drove the company’s expansion and boosted revenues through strategic innovations in cash management. His frequent journeys to the Kingdom since 2015 have deepened his understanding of regional cash flows and cultural practices. Mark’s voice is well recognized in the global banking arena through his participation in conferences, and his strategic expertise is reinforced by a Diploma in Financial Management, a Master’s degree in War Studies from King’s College London, and an Engineering degree from the University of Bristol."
-    },
-    "anne": {
-      "bio": "Brings a quarter-century of expertise to the cash industry, with significant contributions in ATM maintenance, Cash in Transit, and Cash Processing. His leadership at Loomis UK managed a substantial budget, overseeing a broad CIT network. As President of ATMs Worldwide for Securitas, he had accountability for a vast array of ATMs across multiple countries. His strategic input has been instrumental in projects for the Central Bank of Kuwait and enhancing profitability for Hong Kong's major note distributor. Dr. Lewis's background in Mathematics and an MBA underpins his strategic and analytical proficiency."
-    }
-  },
-  "services": {
-    "heroAlt": "Our Services hero image",
-    "banking": {
-      "kicker": "Streamlining Financial Operations",
-      "title": "Banking & Cash Management",
-      "description": "Resaad’s Banking & Cash Management service redefines financial efficiency and security. Our expertise spans from specialized cash and currency-related auditing, robust risk frameworks, and innovative security solutions—empowering financial institutions and enterprises with optimized controls and measurable protection.",
-      "items": [
-        {
-          "title": "Wholesale Cash, CIT & ATM Strategy",
-          "body": "Design operating models and controls for wholesale cash centers, CIT operations, and ATM networks to reduce cost and risk."
-        },
-        {
-          "title": "Cash Processing and Supply Chain Audit",
-          "body": "Independent reviews of currency processing, reconciliation, packaging, transport, and custody with quality KPIs."
-        },
-        {
-          "title": "Operational and Risk Audits",
-          "body": "End-to-end risk assessments and audit programs across vaults, branches, treasury, and support units."
-        },
-        {
-          "title": "Payment System Review and Recommendations",
-          "body": "Evaluate end-to-end payment flows and controls; deliver remediation plans aligned with industry best practice."
-        },
-        {
-          "title": "Cash Forecasts & Polymer Note Management",
-          "body": "Optimize cash demand forecasting and lifecycle controls, including polymer note handling & fitness."
-        },
-        {
-          "title": "Risk Management & Cyber Security in Banking",
-          "body": "Develop risk frameworks, cyber hygiene, and crisis playbooks tailored to financial services."
-        }
-      ]
-    },
-    "audit": {
-      "kicker": "Ensuring Compliance and Efficiency",
-      "title": "Audit & Inspection",
-      "description": "We deliver critical Audit & Inspection services that ensure compliance, operational efficiency, and effective risk management. Our tailored approach addresses industry-specific requirements and provides insights for strategic decision-making.",
-      "items": [
-        {
-          "title": "Financial Audits",
-          "body": "Holistic review of financial statements, internal controls, and accounting policies to enhance reliability."
-        },
-        {
-          "title": "Operational and Quality Management Audits",
-          "body": "Assessment of processes for efficiency, quality assurance, and continuous improvement."
-        },
-        {
-          "title": "Compliance Audits",
-          "body": "External and internal compliance checks against regulatory and policy requirements."
-        },
-        {
-          "title": "Supply Chain Audits",
-          "body": "Supplier due diligence, logistics controls, and end-to-end visibility for resilience."
-        },
-        {
-          "title": "Performance Audits & Internal Controls Review",
-          "body": "Performance benchmarking and effectiveness testing of internal control environments."
-        },
-        {
-          "title": "Technology and IT Audits",
-          "body": "Evaluation of IT governance, security, and system controls including core apps and infrastructure."
-        }
-      ]
-    },
-    "safety": {
-      "kicker": "Ensuring Organizational Resilience",
-      "title": "Safety, Security & Risk Assessment",
-      "description": "In a world of uncertainty, our Safety, Security & Risk Assessment service stands as a bulwark against threats. From emergency response to enterprise risk programs, we help you build safe, resilient operations.",
-      "items": [
-        {
-          "title": "Emergency and Crisis Management",
-          "body": "Crisis readiness programs, incident command structures, and multi-agency coordination exercises."
-        },
-        {
-          "title": "Threat and Security Risk Management",
-          "body": "Enterprise risk registers, threat modeling, and mitigation roadmaps across assets and people."
-        },
-        {
-          "title": "Counter-terrorism Response & Business Continuity Planning",
-          "body": "All-hazards emergency plans integrated with continuity strategies and recovery objectives."
-        },
-        {
-          "title": "Crowded Places Protection",
-          "body": "Venue assessments, ingress/egress design, and hostile vehicle mitigation for public spaces."
-        },
-        {
-          "title": "CPTED (Crime Prevention Through Environmental Design)",
-          "body": "Designing safer environments through lighting, landscaping, and natural surveillance."
-        },
-        {
-          "title": "Comprehensive Emergency Management Plans & Training",
-          "body": "Practical plans, drills, and skill development to embed response capability."
-        },
-        {
-          "title": "Insider Threat Risk Assessment",
-          "body": "Holistic frameworks and monitoring to deter, detect, and respond to insider risks."
-        },
-        {
-          "title": "Human Reliability Program",
-          "body": "Behavior-focused controls to reduce human-factor risks in safety-critical operations."
-        },
-        {
-          "title": "Security Vulnerability Assessment",
-          "body": "Site surveys and red-team evaluations to identify vulnerabilities and prioritize fixes."
-        },
-        {
-          "title": "Supply Chain Security Management",
-          "body": "End-to-end cargo, warehouse, and transit security controls and certifications."
-        },
-        {
-          "title": "Secure Logistics (program oversight)",
-          "body": "Structured program governance for secure transport and high-value logistics."
-        }
-      ]
-    },
-    "it": {
-      "kicker": "Safeguarding Digital Frontiers",
-      "title": "IT & Cybersecurity",
-      "description": "We provide advanced IT and Cybersecurity solutions that safeguard assets, data, and operations—ensuring integrity, confidentiality, and availability of vital information.",
-      "items": [
-        {
-          "title": "Network Security",
-          "body": "Architecture reviews, segmentation, and secure configuration baselines."
-        },
-        {
-          "title": "Data Encryption and Endpoint Security",
-          "body": "Key management, disk encryption, and EDR deployment and tuning."
-        },
-        {
-          "title": "Vulnerability Assessment & Penetration Testing",
-          "body": "Continuous testing and prioritized remediation roadmaps."
-        },
-        {
-          "title": "Security Awareness Training",
-          "body": "Role-based training and phishing simulations that change behavior."
-        },
-        {
-          "title": "Incident Response and Management",
-          "body": "Playbooks, tabletop exercises, and on-call support to contain and recover."
-        },
-        {
-          "title": "Compliance & Regulatory Consulting",
-          "body": "Gap assessments and readiness for ISO 27001, NCA ECC, PCI DSS, and more."
-        }
-      ]
-    }
-  },
-  "footer": {
-    "description": "Resaad is a leading consultancy firm in Saudi Arabia, offering innovative solutions in Banking, Audit, Safety & Security, and IT. We are committed to delivering the highest standards of quality and professionalism to our clients.",
-    "aboutUs": "About Us",
-    "history": "Company History",
-    "team": "Meet the Team",
-    "handbook": "Employee Handbook",
-    "careers": "Careers",
-    "services": "Our Services",
-    "webDev": "Web Development",
-    "webDesign": "Web Design",
-    "marketing": "Marketing",
-    "googleAds": "Google Ads",
-    "links": "Contact us",
-    "faqs": "FAQs",
-    "support": "Support",
-    "liveChat": "Live Chat",
-    "contactUs": "Contact Us",
-    "email": "Email",
-    "phone": "+966 11 226 8336",
-    "allRights": "All rights reserved.",
-    "terms": "Terms & Conditions",
-    "privacy": "Privacy Policy",
-    "addressOS": "3989 7022 Suez Canal, Al Aqiq, Riyadh, Saudi Arabia"
-  },
-  
-   "riyadhAlt2": "Riyadh City",
-  "titlecontact": {
-    "contact": "Contact Us"
-  },
-  "contactus": {
-    "heading": "Get in Touch",
-    "description": "Get in touch with us using the contact form below.<br>Our team will respond to your inquiries promptly.",
-    "addressLabel": "Address:",
-    "address": "3989, 7022 Qanat As Suwais, Al Aqiq, 3989, Riyadh, Saudi Arabia",
-    "emailLabel": "Email:",
-    "email": "info@resaad.com",
-    "phoneLabel": "Phone:",
-    "phone": "+966 11 226 8336"
-  },
-   "SulaimanـAlabbad":"Sulaiman Alabbad",
-  "MarkـTrevor":"Mark Trevor",
-  "DrـAnneـLewis":"Dr Anne Lewis"
 
+  "ourTeamTitle": "Our Team",
+
+  "teamCeo": "CEO",
+  "teamCoFounder": "Co-Founder",
+  "teamScroll": "Scroll",
+  "teamSulaimanBio": "The CEO of Resaad leads the team with over 17 years of experience in banking technology, cash management, sales, and marketing...",
+  "teamMarkBio": "Mark Trevor, in his dual role as Director at Comment Consulting and as a Principal Consultant, brings a rich legacy of experience...",
+  "teamAnneBio": "Brings a quarter-century of expertise to the cash industry, with significant contributions in ATM maintenance, Cash in Transit, and Cash Processing...",
+
+  "servicesHeroAlt": "Our Services hero image",
+
+  "footerDescription": "Resaad is a leading consultancy firm in Saudi Arabia, offering innovative solutions in Banking, Audit, Safety & Security, and IT. We are committed to delivering the highest standards of quality and professionalism to our clients.",
+  "footerAboutUs": "About Us",
+  "footerHistory": "Company History",
+  "footerTeam": "Meet the Team",
+  "footerHandbook": "Employee Handbook",
+  "footerCareers": "Careers",
+  "footerServices": "Our Services",
+  "footerWebDev": "Web Development",
+  "footerWebDesign": "Web Design",
+  "footerMarketing": "Marketing",
+  "footerGoogleAds": "Google Ads",
+  "footerLinks": "Contact us",
+  "footerFaqs": "FAQs",
+  "footerSupport": "Support",
+  "footerLiveChat": "Live Chat",
+  "footerContactUs": "Contact Us",
+  "footerEmail": "Email",
+  "footerPhone": "+966 11 226 8336",
+  "footerAllRights": "All rights reserved.",
+  "footerTerms": "Terms & Conditions",
+  "footerPrivacy": "Privacy Policy",
+  "footerAddressOS": "3989 7022 Suez Canal, Al Aqiq, Riyadh, Saudi Arabia",
+
+  "riyadhAlt2": "Riyadh City",
+  "titleContactUs": "Contact Us",
+
+  "contactHeading": "Get in Touch",
+  "contactDescription": "Get in touch with us using the contact form below.<br>Our team will respond to your inquiries promptly.",
+  "contactAddressLabel": "Address:",
+  "contactAddress": "3989, 7022 Qanat As Suwais, Al Aqiq, 3989, Riyadh, Saudi Arabia",
+  "contactEmailLabel": "Email:",
+  "contactEmail": "info@resaad.com",
+  "contactPhoneLabel": "Phone:",
+  "contactPhone": "+966 11 226 8336",
+
+  "SulaimanـAlabbad": "Sulaiman Alabbad",
+  "MarkـTrevor": "Mark Trevor",
+  "DrـAnneـLewis": "Dr Anne Lewis",
+  
+  "servicesTitle": "Our Services",
+
+  "bankingTitle": "Banking & Cash Management",
+  "bankingSubtitle": "Streamlining Financial Operations",
+  "bankingIntro": "Resaad’s Banking & Cash Management service redefines financial efficiency and security. Our expertise spans from sophisticated cash management to strategic banking solutions, tailored to empower financial institutions and corporate entities with optimized cash flows and reinforced financial practices.",
+
+  "bankingCard1Title": "Wholesale Cash, CIT & ATM Strategy",
+  "bankingCard1Text": "Comprehensive strategies for managing physical currency logistics · Resilient Cash-in-Transit (CIT) operating principles for secure cash movement · ATM fleet strategy and cost optimization.",
+  "bankingCard2Title": "Cash Processing and Supply Chain Audit",
+  "bankingCard2Text": "End-to-end cash processing procedures for efficiency and control · Operational throughput analysis of the cash cycle to enhance security and reliability · Controls design and a modernization roadmap.",
+  "bankingCard3Title": "Operational and Risk Audits",
+  "bankingCard3Text": "Detailed audits to assess operational controls, risks, and compliance · Gap analysis against international best practice · Actionable, prioritized remediation steps.",
+  "bankingCard4Title": "Payment System Review & Recommendations",
+  "bankingCard4Text": "Evaluate current payment systems and infrastructure · Integrate advanced payment solutions for improved customer experience · Strengthen governance and resilience.",
+  "bankingCard5Title": "Cash Forecasts & Polymer Note Transformation",
+  "bankingCard5Text": "Accurate cash-flow forecasting for better treasury planning · Guidance on migrating currency to polymer notes for enhanced security and durability · Risk and cost-benefit modeling.",
+  "bankingCard6Title": "Risk Management & Cyber Security in Banking",
+  "bankingCard6Text": "Holistic risk management for banks and financial institutions · Specialized cyber-security measures to protect digital banking assets · Crisis response playbooks and incident procedures.",
+
+  "auditTitle": "Audit & Inspection",
+  "auditSubtitle": "Ensuring Compliance and Efficiency",
+  "auditIntro": "Resaad excels in offering critical Audit and Inspection services, crucial for ensuring compliance, operational efficiency, and effective risk management. Our tailored approach addresses industry-specific requirements, delivering valuable insights for strategic decision-making.",
+
+  "auditCard1Title": "Financial Audits",
+  "auditCard1Text": "Review and verification of financial records · Risk identification and improvements · Clear, defensible reporting.",
+  "auditCard2Title": "Operational & Quality Audits",
+  "auditCard2Text": "Process efficiency and control assessment · Quality system evaluation · KPI design and performance tracking.",
+  "auditCard3Title": "Compliance Audits",
+  "auditCard3Text": "Adherence to regulations and standards · Controls testing and documentation · Periodic compliance reviews.",
+  "auditCard4Title": "Supply Chain Audits",
+  "auditCard4Text": "Reliability and efficiency checks · Upstream/downstream process improvements · Cost and risk optimization.",
+  "auditCard5Title": "Performance & Controls Review",
+  "auditCard5Text": "Performance and equipment assessment · Internal controls review · Remediation planning.",
+  "auditCard6Title": "Technology & IT Audits",
+  "auditCard6Text": "IT infrastructure and systems evaluation · Data protection and backup reviews · Enhancement roadmap.",
+
+  "securityTitle": "Safety, Security & Risk Assessment",
+  "securitySubtitle": "Ensuring Organizational Resilience",
+  "securityIntro": "In a world where risks and uncertainties abound, Resaad’s Safety, Security & Risk Assessment service stands as a bulwark against potential threats. We provide comprehensive solutions from emergency management to risk mitigation strategies to ensure your organization’s safety and resilience.",
+
+  "securityCard1Title": "Emergency & Crisis Management",
+  "securityCard1Text": "Prevent, prepare, and respond with clear strategies · Incident protocols and frameworks · Tailored practice and exercises.",
+  "securityCard2Title": "Threat & Security Risk Management",
+  "securityCard2Text": "Identify and mitigate risks · Layered security measures · Continuous monitoring.",
+  "securityCard3Title": "Counter-terrorism & Business Continuity",
+  "securityCard3Text": "Counter-terrorism strategies · Continuity planning · Exercises and governance.",
+  "securityCard4Title": "Crowded Places Protection",
+  "securityCard4Text": "Safety in high-footfall areas · Protective measures and evacuation · Risk-reduction strategies.",
+  "securityCard5Title": "CPTED",
+  "securityCard5Text": "Environmental design for safety · Collaboration with urban planning · Safer flows and access.",
+  "securityCard6Title": "Emergency Plans & Training",
+  "securityCard6Text": "Detailed plans and playbooks · Training and live exercises · Clear escalation protocols.",
+  "securityCard7Title": "Insider Threat Risk Assessment",
+  "securityCard7Text": "Identify insider risks · Screening and response · Third-party considerations.",
+  "securityCard8Title": "Human Reliability Program",
+  "securityCard8Text": "Reduce error and enhance reliability · Clear screening criteria · Ongoing training.",
+  "securityCard9Title": "Security Vulnerability Assessment",
+  "securityCard9Text": "Identify vulnerabilities · Risk scoring and mitigation · Benchmarking.",
+  "securityCard10Title": "Supply Chain Security Management",
+  "securityCard10Text": "Secure supply-chain policies · End-to-end visibility · Threat modeling.",
+  "securityCard11Title": "Secure Logistics",
+  "securityCard11Text": "Strategic security and logistics program · Risk mitigation in high-value logistics · Partner compliance.",
+
+  "itTitle": "IT & Cybersecurity",
+  "itSubtitle": "Safeguarding Digital Frontiers",
+  "itIntro": "Resaad leads in providing advanced IT and Cybersecurity solutions. We safeguard business assets, data, and operations to ensure the integrity, confidentiality, and availability of vital information.",
+
+  "itCard1Title": "Network Security",
+  "itCard1Text": "Optimized firewalls and IPS · Zero-trust segmentation · Continuous monitoring.",
+  "itCard2Title": "Data Encryption & Endpoint Security",
+  "itCard2Text": "Protect data at rest/in use/in transit · Identity and device governance · Crypto lifecycle enforcement.",
+  "itCard3Title": "Vulnerability Testing",
+  "itCard3Text": "Security assessments · Prioritized remediation · Secure SDLC enablement.",
+  "itCard4Title": "Security Awareness Training",
+  "itCard4Text": "Practical training · Phishing simulations · Progress dashboards.",
+  "itCard5Title": "Incident Response",
+  "itCard5Text": "24/7 response and containment · Forensics and recovery · Regulatory reporting.",
+  "itCard6Title": "Compliance Consulting",
+  "itCard6Text": "ISO/NIST/PCI frameworks · Audit evidence design · Ongoing readiness."
 
 
 }

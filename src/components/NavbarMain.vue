@@ -22,7 +22,8 @@
               <RouterLink to="/services" @click="closeMenu">{{ $t("services2") }}</RouterLink>
             </li>
             <li>
-              <RouterLink to="/contact" @click="closeMenu">{{ $t("title.contact") }}</RouterLink>
+              <!-- تم تعديل المفتاح هنا -->
+              <RouterLink to="/contact" @click="closeMenu">{{ $t("titleContact") }}</RouterLink>
             </li>
 
             <li style="color: #e4ae65 !important; font-weight: bold !important">

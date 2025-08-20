@@ -58,26 +58,33 @@
     </section>
 
     <!-- About Us Big Section -->
-    <section class="px-4 py-20" style="animation-delay: 0.35s" dir="ltr">
+    <section class="px-4 py-16 md:py-20" style="animation-delay: 0.35s" dir="ltr">
       <div class="mx-auto max-w-[90vw]">
-        <div class="flex min-h-[700px] flex-col items-stretch gap-6 overflow-hidden rounded-3xl p-4 md:p-10 lg:flex-row">
-          <div class="flex flex-col justify-center rounded-2xl bg-gradient-to-r from-[#e6b064] to-white p-6 md:p-10 lg:w-1/2" :class="isRTL ? 'text-right' : 'text-left'">
-            <div class="w-full max-w-[400px] space-y-6" :class="isRTL ? 'ml-auto' : ''">
-              <h2 class="text-7xl font-extrabold text-black">{{ $t('aboutUs') }}</h2>
-              <h3 class="whitespace-pre-line text-5xl font-bold leading-tight text-black">
+        <div class="flex flex-col items-stretch gap-6 overflow-hidden rounded-3xl p-4 md:p-10 lg:min-h-[700px] lg:flex-row">
+          <!-- Left Content -->
+          <div class="flex flex-col justify-center rounded-2xl bg-gradient-to-r from-[#e6b064] to-white p-5 sm:p-8 md:p-10 lg:w-1/2" :class="isRTL ? 'text-right' : 'text-left'">
+            <div class="w-full max-w-[520px] space-y-4 md:max-w-[620px] md:space-y-6" :class="isRTL ? 'ml-auto' : ''">
+              <h2 class="text-4xl font-extrabold text-black sm:text-5xl md:text-6xl lg:text-7xl">
+                {{ $t('aboutUs') }}
+              </h2>
+
+              <h3 class="whitespace-pre-line text-2xl font-bold leading-tight text-black sm:text-3xl md:text-4xl lg:text-5xl">
                 {{ $t('aboutTagline') }}
               </h3>
-              <p class="text-base text-gray-700 md:text-lg">
+
+              <p class="text-sm leading-relaxed text-gray-700 sm:text-base md:text-lg">
                 {{ $t('aboutParagraph') }}
               </p>
-              <router-link to="/about" class="mt-12 w-fit rounded-full border border-black px-6 py-2 text-black transition hover:bg-black hover:text-white" style="position: relative; top: 18px">
+
+              <router-link to="/about" class="mt-6 block w-fit rounded-full border border-black px-6 py-2 text-black transition hover:bg-black hover:text-white md:mt-10 lg:mt-12">
                 {{ $t('seeMore') }}
               </router-link>
             </div>
           </div>
+
           <!-- Right Image -->
           <div class="overflow-hidden rounded-2xl shadow-md lg:w-1/2">
-            <img src="/images/neom-xXqWVUvf_Gw-unsplash.jpg" alt="Desert Landscape" class="h-full w-full object-cover" />
+            <img src="/images/neom-xXqWVUvf_Gw-unsplash.jpg" alt="Desert Landscape" class="h-64 w-full object-cover md:h-full" />
           </div>
         </div>
       </div>
