@@ -105,7 +105,7 @@
 
           <!-- Mission Card -->
           <div class="relative flex h-[320px] w-full items-center overflow-hidden rounded-2xl shadow-md md:h-[400px]">
-            <img src="https://i.postimg.cc/pL6xtrTv/shutterstock-2496010827.jpg" loading="lazy"  loading="lazy" alt="Mission" class="absolute inset-0 h-full w-full object-cover" />
+            <img src="https://i.postimg.cc/pL6xtrTv/shutterstock-2496010827.jpg" loading="lazy"  alt="Mission" class="absolute inset-0 h-full w-full object-cover" />
             <div class="absolute inset-0 bg-gradient-to-r from-black/90 to-transparent" :class="isRTL ? 'bg-gradient-to-l' : 'bg-gradient-to-r'"></div>
             <div class="relative z-10 p-8">
               <h3 class="mb-2 text-5xl font-extrabold text-white md:text-6xl" data-aos="fade-up" data-aos-delay="200">
