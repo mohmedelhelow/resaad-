@@ -1,20 +1,16 @@
 <template>
   <div class="mx-auto max-w-[1400px]" :dir="isRTL ? 'rtl' : 'ltr'">
     <!-- Hero Section -->
-    <section class="section1 pb-16 pt-28">
+   <section class="section1 pb-16 pt-28">
       <div class="relative mx-auto min-h-[calc(100vh-7rem-4rem)] max-w-[90vw] overflow-hidden rounded-3xl shadow-xl">
         <img src="https://res.cloudinary.com/dawdmbyro/image/upload/v1755675265/homepage1_zwpvij.png" class="absolute inset-0 h-full w-full object-cover" loading="lazy" alt="Background image" />
-        <div class="absolute inset-0 flex items-start justify-center bg-black bg-opacity-5 px-6 pt-32 md:justify-start">
-          <div
-            :class="[
-              'max-w-2xl text-center text-white', // دايمًا في النص على الموبايل
-              isRTL ? 'md:text-right' : 'md:text-left', // وعلى الشاشات الكبيرة ياخد RTL/LTR
-            ]"
-          >
-            <h1 class="text-[clamp(3rem,15vw,12rem)] font-extrabold leading-tight" data-aos="fade-up" data-aos-delay="200">
+        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-5 px-6">
+          <div class="w-full text-center text-white">
+            <h1 class="text-[clamp(2rem,10vw,6rem)] font-extrabold leading-tight">
               {{ $t('Crafting') }}
             </h1>
-            <h2 class="m-10 mt-0.5 text-xl font-semibold sm:text-2xl md:text-3xl lg:text-4xl" data-aos="fade-up" data-aos-delay="1000">
+
+            <h2 class="mt-2 text-xl font-medium sm:text-2xl md:text-3xl lg:text-4xl">
               {{ $t('blueprint') }}
             </h2>
           </div>
